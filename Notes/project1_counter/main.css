@@ -1,0 +1,30 @@
+#countLabel {
+  /* sets the element as a block level element */
+  display: block;
+  /* puts it in the center of our screen */
+  text-align: center;
+  border: 2px dashed lightblue;
+  font-size: 10em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#buttonContainer {
+  text-align: center;
+  border: 2px dashed lightgreen;
+}
+
+#buttonContainer .counterButton {
+  margin: 30px 0px 0px 60px;
+  padding: 15px;
+  font-size: 25px;
+  border-radius: 10px;
+  border-color: white;
+  background-color: darkgreen;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+
+.counterButton:hover {
+  background-color: rgb(21, 186, 21);
+}

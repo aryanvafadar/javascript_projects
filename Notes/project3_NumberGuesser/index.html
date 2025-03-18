@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guessing Game</title>
+  </head>
+  <body>
+    <h1>Welcome to the Number Guessing Game</h1>
+    <h3>Instructions</h3>
+    <p>
+      Guess a number between 1 and 100. If you guess too high, we will tell you
+      to guess a lower number. <br />
+      If you guess too low, we will tell you to guess a higher number. <br />
+      Once you guess correctly, we will let you know and display how many
+      guesses it took.
+    </p>
+    <div class="guess_group">
+      <label for="numberGuess">Enter Guess: </label>
+      <input
+        type="number"
+        name=""
+        id="numberGuess"
+        required
+        min="0"
+        max="100"
+        value="50"
+      />
+      <button type="submit" id="guessButton">Submit Guess</button>
+    </div>
+    <div class="results_group">
+      <p id="submittedGuesses"></p>
+      <p id="guessParagraph"></p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
