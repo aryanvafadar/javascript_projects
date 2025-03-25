@@ -1,0 +1,59 @@
+body {
+  margin: 0; /* Set Page Margin to Zero */
+  background-color: hsl(0, 11%, 93%);
+  font-family: monospace;
+  display: flex; /* Set all elements in our html page as flexbox */
+  flex-direction: column;
+  align-items: center; /* Centers the elements horizontally */
+}
+
+#myH1 {
+  font-size: 3rem;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 30px;
+  padding: 20px;
+  background-color: whitesmoke;
+}
+
+#display {
+  font-size: 5rem;
+  font-weight: bold;
+  color: hsla(0, 0%, 0%, 0.565);
+  margin-bottom: 30px;
+}
+
+#controls button {
+  font-size: 2rem;
+  border-radius: 10px;
+  padding: 5px 15px;
+  min-width: 125px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.5s ease;
+}
+
+#startButton {
+  background-color: hsl(120, 91%, 35%);
+}
+#stopButton {
+  background-color: hsl(0, 76%, 44%);
+}
+#resetButton {
+  background-color: rgb(6, 79, 162);
+}
+#startButton:hover {
+  background-color: hsl(120, 86%, 48%);
+}
+#stopButton:hover {
+  background-color: hsl(0, 100%, 58%);
+}
+#resetButton:hover {
+  background-color: rgb(17, 110, 216);
+}

@@ -1,0 +1,36 @@
+/* Set the margin of the html page to zero */
+body {
+  margin: 0;
+  background-image: url(background_image_clock.webp);
+  background-position: center; /* Positions the image in the center */
+  background-repeat: no-repeat;
+  background-size: cover; /* This makes the image cover the entire page */
+  background-attachment: fixed; /* This keeps the background fixed as you scroll down the page */
+}
+
+/*
+diplay: flex, turns an element into a flex container. Their direct children also become flex items, which allows for easy arrangement and alignment
+        This allows us to specify whether the items are laid out in a row (flex-direction: row) or in a column (flex-direction: column)
+
+Alignment Strategies:
+    1) We can align items on the main axis either horizonally (if in a row) or vertically (if in a column). This is done with justify content center
+    2) We can align items on the cross axis and align items perpendicular to the main axis. This is done with align-items
+    3) flex-wrap can be used to control whether flex items should wrap on new lines if there is not enough space
+
+*/
+#clock-container {
+  display: flex; /* Turns the element into a flex container */
+  justify-content: center; /* Centers the element in the middle of the screen */
+  align-items: center; /* Vertically aligns the element*/
+  border: 2px dashed darkblue;
+  height: 100vh; /* The size of the container is quite small, so this expands the container to take up the full viewport of our page */
+}
+
+#clock {
+  font-family: monospace;
+  font-size: 100px;
+  font-weight: bold;
+  color: hwb(0 99% 0%);
+  text-align: center; /* Centers inline content */
+  backdrop-filter: blur(100px);
+}
