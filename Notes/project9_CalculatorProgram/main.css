@@ -1,0 +1,70 @@
+body {
+  font-family: monospace;
+  margin: 0;
+  margin-top: 5vh;
+  margin-right: 10vh;
+  margin-left: 10vh;
+  height: 100vh;
+  max-width: 500px;
+  overflow: hidden;
+}
+
+#calculator {
+  background-color: hsl(0, 1%, 25%);
+  border-radius: 15px;
+  max-height: 80vh;
+}
+
+#display {
+  width: 92%;
+  height: 75px;
+  border-radius: 15px;
+  background-color: hsl(0, 0%, 45%);
+  padding: 20px;
+  text-align: left;
+  border: none;
+  color: white;
+  font-size: 3rem;
+}
+
+#keys {
+  display: grid; /* This organizes our html elements in a grid*/
+  grid-template-columns: repeat(
+    4,
+    1fr
+  ); /* This allows us to put our html elements in columns */
+  gap: 20px;
+  padding: 20px;
+}
+
+button {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  border: none;
+  font-size: 3rem;
+  font-weight: bold;
+  background-color: hsla(0, 0%, 30%);
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(114, 113, 113);
+}
+
+button:active {
+  background-color: rgb(165, 162, 162);
+}
+
+.operator-btn {
+  background-color: rgb(234, 158, 18);
+}
+
+.operator-btn:hover {
+  background-color: rgb(255, 188, 65);
+}
+
+.operator-btn:active {
+  background-color: rgb(251, 208, 127);
+}

@@ -7,6 +7,51 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <script src="index.js"></script>
+    <div class="program1-container">
+      <h1>Premium Calculator</h1>
+      <div class="inputs">
+        <div class="input-group">
+          <label for="spotPrice">Enter Spot Price</label>
+          <input
+            type="number"
+            name="spotPrice"
+            id="spotPrice"
+            required
+            min="0.01" />
+        </div>
+        <div class="input-group">
+          <label for="metalWeight">Enter Weight</label>
+          <input
+            type="number"
+            name="metalWeight"
+            id="metalWeight"
+            required
+            min="0.01" />
+        </div>
+        <div class="input-group">
+          <label for="metalPrice">Enter Price</label>
+          <input
+            type="number"
+            name="metalPrice"
+            id="metalPrice"
+            required
+            min="50" />
+        </div>
+      </div>
+      <div class="result-group">
+        <button type="button" id="calcPremiumButton">Calculate Premium</button>
+        <label for="">Result:</label>
+        <input
+          type="text"
+          name="metalResult"
+          id="metalResult"
+          readonly
+          placeholder=" Will Update" />
+      </div>
+    </div>
+    <br /><br />
+    <hr />
+
+    <script type="module" src="index.js"></script>
   </body>
 </html>
